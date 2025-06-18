@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Photography - Capturing Dreams</title>
     <!-- <link rel="icon" href="logo1.png" type="image/x-icon"> -->
-     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -30,8 +30,8 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -215,60 +215,64 @@
 
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio fade-in">
+    <section id="portfolio" class="portfolio">
         <h2 class="section-title">Portfolio</h2>
 
-        <div class="portfolio-cta">
-            <p>Explore our complete portfolio and see how we bring visions to life</p>
-            <!-- <a href="#" class="portfolio-btn">View Complete Portfolio</a> -->
+
+        <!-- Filter Controls -->
+        <div class="portfolio-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="wedding">Wedding</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+            <button class="filter-btn" data-filter="event">Events</button>
         </div>
 
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop"
+        <!-- Main Showcase -->
+        <div class="portfolio-showcase">
+            <div class="showcase-item active">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop"
                     alt="Pre-Wedding Photography">
-                <div class="portfolio-overlay">
-                    <div class="portfolio-title">Pre-Wedding Magic</div>
+                <div class="showcase-overlay">
+                    <div class="showcase-title">Pre-Wedding Magic</div>
+                    <div class="showcase-description">Capturing intimate moments before the big day with artistic flair
+                        and emotional depth.</div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&h=600&fit=crop"
+            <div class="showcase-item">
+                <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&h=600&fit=crop"
                     alt="Model Portfolio">
-                <div class="portfolio-overlay">
-                    <div class="portfolio-title">Model Portfolio</div>
+                <div class="showcase-overlay">
+                    <div class="showcase-title">Professional Portraits</div>
+                    <div class="showcase-description">High-fashion model photography with studio-quality lighting and
+                        creative compositions.</div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1525772764200-be829a350797?w=600&h=600&fit=crop"
+            <div class="showcase-item">
+                <img src="https://images.unsplash.com/photo-1525772764200-be829a350797?w=800&h=600&fit=crop"
                     alt="Commercial Photography">
-                <div class="portfolio-overlay">
-                    <div class="portfolio-title">Commercial Shoots</div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&h=600&fit=crop"
-                    alt="Destination Photography">
-                <div class="portfolio-overlay">
-                    <div class="portfolio-title">Destination Shoots</div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop"
-                    alt="Event Photography">
-                <div class="portfolio-overlay">
-                    <div class="portfolio-title">Event Coverage</div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e8eca2a4?w=600&h=600&fit=crop"
-                    alt="Drone Photography">
-                <div class="portfolio-overlay">
-                    <div class="portfolio-title">Aerial Shots</div>
+                <div class="showcase-overlay">
+                    <div class="showcase-title">Commercial Excellence</div>
+                    <div class="showcase-description">Brand photography that tells your story and elevates your business
+                        presence.</div>
                 </div>
             </div>
         </div>
+
+        <!-- Navigation -->
+        <div class="portfolio-navigation">
+            <button class="nav-btn" id="prevBtn">‹</button>
+            <button class="nav-btn" id="nextBtn">›</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
     </section>
 
+    <!-- Contact- section -->
     <section id="contact" class="contact fade-in">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-intro">
@@ -281,7 +285,7 @@
                 <div class="contact-details">
                     <div class="contact-item">
                         <span>📍</span>
-                        <div>
+                        <div class="contact-text">
                             <strong>Smart Photography</strong><br>
                             Bustandchowk, Upleta<br>
                             Gujarat, India
@@ -289,11 +293,11 @@
                     </div>
                     <div class="contact-item">
                         <span>📞</span>
-                        <span>+91 99796 86517</span>
+                        <span class="contact-text">+91 99796 86517</span>
                     </div>
                     <div class="contact-item">
                         <span>✉️</span>
-                        <span>smartdigitalupleta@gmail.com</span>
+                        <span class="contact-text">smartdigitalupleta@gmail.com</span>
                     </div>
                 </div>
 
@@ -302,7 +306,7 @@
                     <div class="social-links-contact">
                         <a href="https://www.instagram.com/smartphotography_88/?__pwa=1" class="social-link">
                             <span>
-                    <i class="fab fa-instagram"></i>
+                                <i class="fab fa-instagram"></i>
 
                             </span> Instagram
                         </a>
@@ -311,7 +315,7 @@
                                 <i class="fab fa-youtube"></i>
                             </span> YouTube
                         </a>
-                        <a href="tel:+919979686517" class="social-link">
+                        <a href="tel:+919979686517" class="social-link Phone">
                             <span>
                                 <i class="fas fa-phone"></i>
                             </span> WhatsApp
@@ -354,97 +358,99 @@
 
 
     <footer>
-    <div class="footer-container">
-        <!-- Decorative top border -->
-        <div class="footer-top-border"></div>
-        
-        <!-- Main footer content -->
-        <div class="footer-main">
-            <div class="footer-grid">
-                <!-- Company Info -->
-                <div class="footer-brand">
-                    <div class="logo">Smart Photography</div>
-                    <p class="brand-tagline">Capturing Moments, Crafting Stories</p>
-                    <p class="brand-description">
-                        We specialize in creating timeless memories through our lens, 
-                        bringing your special moments to life with artistic vision and 
-                        professional excellence.
-                    </p>
-                    
-                </div>
+        <div class="footer-container">
+            <!-- Decorative top border -->
+            <div class="footer-top-border"></div>
 
-                <!-- Services -->
-                <div class="footer-section">
-                    <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#services"><i class="fas fa-camera"></i> Wedding Photography</a></li>
-                        <li><a href="#services"><i class="fas fa-video"></i> Cinematography</a></li>
-                        <li><a href="#services"><i class="fas fa-mountain"></i> Destination Shoots</a></li>
-                        <li><a href="#services"><i class="fas fa-briefcase"></i> Commercial Work</a></li>
-                        <li><a href="#services"><i class="fas fa-users"></i> Portrait Sessions</a></li>
-                        <li><a href="#services"><i class="fas fa-birthday-cake"></i> Event Coverage</a></li>
-                    </ul>
-                </div>
+            <!-- Main footer content -->
+            <div class="footer-main">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-brand">
+                        <div class="logo">Smart Photography</div>
+                        <p class="brand-tagline">Capturing Moments, Crafting Stories</p>
+                        <p class="brand-description">
+                            We specialize in creating timeless memories through our lens,
+                            bringing your special moments to life with artistic vision and
+                            professional excellence.
+                        </p>
 
-                <!-- Quick Links -->
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
-                        <li><a href="#portfolio"><i class="fas fa-images"></i> Portfolio</a></li>
-                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    </div>
 
-        <!-- Social Media Section -->
-        <div class="footer-social">
-            <h4>Follow Our Journey</h4>
-            <div class="social-links">
-                <a href="https://www.instagram.com/smartphotography_88/?__pwa=1" class="social-link instagram" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://youtube.com/@smartphotography5575?si=bMk3aKNom2ZT4CM5" class="social-link youtube" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                    <span>YouTube</span>
-                </a>
-                <a href="tel:+919979686517" class="social-link phone" title="Call Us">
-                    <i class="fas fa-phone"></i>
-                    <span>Call</span>
-                </a>
-                <a href="mailto:smartdigitalupleta@gmail.com" class="social-link email" title="Email">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-            </div>
-        </div>
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#services"><i class="fas fa-camera"></i> Wedding Photography</a></li>
+                            <li><a href="#services"><i class="fas fa-video"></i> Cinematography</a></li>
+                            <li><a href="#services"><i class="fas fa-mountain"></i> Destination Shoots</a></li>
+                            <li><a href="#services"><i class="fas fa-briefcase"></i> Commercial Work</a></li>
+                            <li><a href="#services"><i class="fas fa-users"></i> Portrait Sessions</a></li>
+                            <li><a href="#services"><i class="fas fa-birthday-cake"></i> Event Coverage</a></li>
+                        </ul>
+                    </div>
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <div class="copyright">
-                    <p>&copy; 2025 Smart Photography. All rights reserved.</p>
-                    <p class="crafted-with">Crafted with <i class="fas fa-heart"></i> for capturing memories</p>
-                </div>
-                <div class="footer-bottom-links">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
-                    <a href="#cookies">Cookie Policy</a>
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="#portfolio"><i class="fas fa-images"></i> Portfolio</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Decorative Elements -->
-        <div class="footer-decoration">
-            <div class="decoration-element"></div>
-            <div class="decoration-element"></div>
-            <div class="decoration-element"></div>
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h4>Follow Our Journey</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/smartphotography_88/?__pwa=1" class="social-link instagram"
+                        title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://youtube.com/@smartphotography5575?si=bMk3aKNom2ZT4CM5" class="social-link youtube"
+                        title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="tel:+919979686517" class="social-link phone" title="Call Us">
+                        <i class="fas fa-phone"></i>
+                        <span>Call</span>
+                    </a>
+                    <a href="mailto:smartdigitalupleta@gmail.com" class="social-link email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 Smart Photography. All rights reserved.</p>
+                        <p class="crafted-with">Crafted with <i class="fas fa-heart"></i> for capturing memories</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#cookies">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Elements -->
+            <div class="footer-decoration">
+                <div class="decoration-element"></div>
+                <div class="decoration-element"></div>
+                <div class="decoration-element"></div>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- Success Message Modal -->
     <div class="success-message" id="successMessage">
